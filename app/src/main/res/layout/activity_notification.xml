@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notification"
+        android:background="@color/dark_background">
+
+    <ImageButton
+        android:id="@+id/backButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="33dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/bottomNavigationBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/rounded_corners_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:srcCompat="@drawable/onhome" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:srcCompat="@drawable/nmap" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:srcCompat="@drawable/onmsg"
+            app:tint="@color/button_color" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:srcCompat="@drawable/onprofile"
+          />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/notificationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Notification"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/notificationCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="16dp"
+
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notificationTitle">
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="73dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@drawable/rounded_corners_background"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notificationTitle">
+
+        <TextView
+            android:id="@+id/successMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="You booking is successful"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/timeAgo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3m ago"
+            android:textColor="@color/light_gray"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_background"
+    tools:context=".profile">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_corners_background"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@id/saveChangesButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profileTextView"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/profile"
+            android:src="@drawable/profileicon"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/name"
+            android:textColor="@color/light_gray"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/antony_starr"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:textColorHint="@color/light_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/email"
+            android:textColor="@color/light_gray"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/antonystarr_gmail_com"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white"
+            android:textColorHint="@color/light_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/mobile"
+            android:textColor="@color/light_gray"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/contactNumberEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/_94_760042291"
+            android:importantForAutofill="no"
+            android:inputType="phone"
+            android:textColor="@color/white"
+            android:textColorHint="@color/light_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/address"
+            android:textColor="@color/light_gray"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/addressEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/_2201_interstate_35e_denton"
+            android:importantForAutofill="no"
+            android:inputType="textPostalAddress"
+            android:textColor="@color/white"
+            android:textColorHint="@color/light_gray" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomNavigationBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/rounded_corners_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/home"
+            app:srcCompat="@drawable/onhome" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/map"
+            app:srcCompat="@drawable/nmap" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/notification"
+            app:srcCompat="@drawable/onmsg" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/profile"
+            app:srcCompat="@drawable/onprofile"
+            app:tint="@color/button_color" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="33dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/back"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profileTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/profilecapital"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/backButton" />
+
+    <Button
+        android:id="@+id/saveChangesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="125dp"
+        android:backgroundTint="@color/button_color"
+        android:text="@string/save_changes"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

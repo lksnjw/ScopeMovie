@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_background"
+    tools:context=".movie">
+
+    <ImageButton
+        android:id="@+id/backButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="33dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back" />
+
+    <TextView
+        android:id="@+id/movieTitleTextView"
+        android:layout_width="361dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="Second II Show"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+    <TextView
+        android:id="@+id/movieDetailsTextView"
+        android:layout_width="361dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        android:text="2024   2h 02m      Action/Thriller"
+        android:textColor="@color/light_gray"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movieTitleTextView" />
+
+    <TextView
+        android:id="@+id/showtimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:text="10:30 AM"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movieDetailsTextView" />
+
+    <TextView
+        android:id="@+id/availableSeatsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="17dp"
+        android:text="30"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/showtimeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/movieDetailsTextView" />
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="@color/button_color"
+        android:text="Continue"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showtimeTextView" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="345dp"
+        android:layout_height="453dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backButton3"
+        app:srcCompat="@drawable/second" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

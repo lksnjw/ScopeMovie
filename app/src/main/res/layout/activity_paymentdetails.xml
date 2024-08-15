@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_background"
+    tools:context=".paymentdetails">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="358dp"
+        android:layout_height="450dp"
+        android:layout_marginTop="58dp"
+        android:background="#4B5164"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paymentTitle">
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="87dp"
+            android:backgroundTint="#575D6F"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/expiryCvcLayout" />
+
+        <TextView
+            android:id="@+id/paymentMethodLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="29dp"
+            android:text="Payment Method"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/visaLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/visa"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/paymentMethodLabel" />
+
+        <EditText
+            android:id="@+id/firstNameEditText"
+            android:layout_width="128dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="22dp"
+            android:backgroundTint="#AAABAE"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/light_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/visaLogo" />
+
+        <EditText
+            android:id="@+id/lastNameEditText"
+            android:layout_width="143dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="106dp"
+            android:layout_marginEnd="36dp"
+            android:backgroundTint="#AAABAE"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/light_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/cardNumberEditText"
+            android:layout_width="313dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#AAABAE"
+            android:hint="Card Number"
+            android:inputType="number"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/light_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lastNameEditText" />
+
+        <LinearLayout
+            android:id="@+id/expiryCvcLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardNumberEditText">
+
+            <EditText
+                android:id="@+id/expiryDateEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#AAABAE"
+                android:hint="Expire date"
+                android:inputType="date"
+                android:padding="12dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/light_gray" />
+
+            <EditText
+                android:id="@+id/cvcEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#AAABAE"
+                android:hint="CVC"
+                android:inputType="number"
+                android:padding="12dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/light_gray" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/payButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="127dp"
+            android:layout_marginTop="87dp"
+            android:backgroundTint="@color/button_color"
+            android:text="Pay"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/cancelButton"
+            app:layout_constraintTop_toBottomOf="@+id/expiryCvcLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/paymentTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="Payment"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

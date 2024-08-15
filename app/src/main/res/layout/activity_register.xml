@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_background"
+    android:padding="16dp"
+    tools:context=".register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="16dp">
+
+        <TextView
+            android:id="@+id/welcomeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="@string/welcome_to_cine_scope"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/fullNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/rounded_corners_background"
+
+
+            android:hint="Enter your full name"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textColor="@color/dark_background"
+            android:textColorHint="@color/light_gray" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_corners_background"
+
+            android:hint="@string/enter_your_email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="@color/dark_background"
+            android:textColorHint="@color/light_gray" />
+
+        <EditText
+            android:id="@+id/contactNumberEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_corners_background"
+
+            android:hint="Enter you Contact number"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:textColor="@color/dark_background"
+            android:textColorHint="@color/light_gray" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_corners_background"
+
+            android:hint="@string/enter_your_password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="@color/dark_background"
+            android:textColorHint="@color/light_gray" />
+
+        <EditText
+            android:id="@+id/confirmPasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_corners_background"
+
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="@color/dark_background"
+            android:textColorHint="@color/light_gray" />
+
+        <CheckBox
+            android:id="@+id/termsCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:buttonTint="@color/button_color"
+            android:text="I agree all statements in Term of service"
+            android:textColor="@color/light_gray" />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/button_color"
+            android:text="Register"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/signInTextView"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:text="Already have an account? sign in"
+            android:textColor="@color/light_gray" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

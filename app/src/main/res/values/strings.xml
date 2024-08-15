@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Scope Movie</string>
+    <string name="cine_scope">Cine Scope</string>
+    <string name="welcome_to_cine_scope">Welcome to Cine Scope</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="show_more">show more</string>
+    <string name="categories">Categories</string>
+    <string name="all">ALL</string>
+    <string name="action">Action</string>
+    <string name="thriller">Thriller</string>
+    <string name="second_show">Second Show</string>
+    <string name="dead_pool">Dead pool</string>
+    <string name="inception">Inception</string>
+    <string name="oppenheimer">Oppenheimer</string>
+    <string name="tenet">Tenet</string>
+    <string name="romantic">Romantic</string>
+    <string name="home">home\n</string>
+    <string name="map">map</string>
+    <string name="notification">notification</string>
+    <string name="profile">profile</string>
+    <string name="back">backicon</string>
+    <string name="rating">rating</string>
+    <string name="name">Name</string>
+    <string name="antony_starr">Antony Starr</string>
+    <string name="email">Email</string>
+    <string name="antonystarr_gmail_com">antonystarr@gmail.com</string>
+    <string name="mobile">Mobile</string>
+    <string name="_94_760042291">+94 760042291</string>
+    <string name="address">Address</string>
+    <string name="_2201_interstate_35e_denton">2201 Interstate 35E, Denton</string>
+    <string name="profilecapital">Profile</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="booking_successful">Booking successful!</string>
+    <string name="second_ii_show">SECOND II SHOW</string>
+    <string name="date_12_05_2024">Date: 12/05/2024</string>
+    <string name="time_18_30pm">Time: 18:30PM</string>
+    <string name="ticket_1x2_2">Ticket: 1x2 - 2</string>
+    <string name="total_amount_500">Total Amount: 500/=</string>
+    <string name="cancel">Cancel</string>
+    <string name="pay">Pay</string>
+    <string name="now_showing">Now Showing</string>
+    <string name="dead_pool_iii">DEAD POOL III</string>
+    <string name="_2024_2h_02m_action_thriller">2024 2h 02m Action/Thriller</string>
+    <string name="_10_30_am">10:30 AM</string>
+
+    <string name="screen">SCREEN</string>
+    <string name="book_ticket">Book Ticket</string>
+</resources>
