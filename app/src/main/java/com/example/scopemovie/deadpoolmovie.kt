@@ -17,18 +17,15 @@ class deadpoolmovie : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_deadpoolmovie)
 
-        // Get references to the buttons
+
         val backButton: ImageButton = findViewById(R.id.backButton3)
         val continueButton: Button = findViewById(R.id.continueButton)
 
-        // Set click listener for the back button
         backButton.setOnClickListener {
             finish() // Finish the current activity to go back
         }
 
-        // Set click listener for the continue button
         continueButton.setOnClickListener {
-            // Navigate to the seat selection activity
             val intent = Intent(this, dpdticket::class.java)
             startActivity(intent)
         }

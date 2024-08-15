@@ -18,10 +18,10 @@ class dpdconfirm : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_dpdconfirm)
 
-        // Handle Cancel button click
+
         val cancelButton: Button = findViewById(R.id.cancelButton)
         cancelButton.setOnClickListener {
-            finish() // Finish the current activity to go back (presumably to the seat selection or previous screen)
+            finish()
         }
 
         // Handle Pay button click
