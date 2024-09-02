@@ -17,14 +17,14 @@ class paymentdetails : AppCompatActivity() {
         // Handle Cancel button click
         val cancelButton: Button = findViewById(R.id.cancelButton)
         cancelButton.setOnClickListener {
-            finish() // Finish the current activity to go back (presumably to the seat selection or previous screen)
+            finish()
         }
 
         // Handle Pay button click
         val payButton: Button = findViewById(R.id.payButton)
         payButton.setOnClickListener {
             // Navigate to the payment success activity
-            val intent = Intent(this, paymentsuccess::class.java) // Replace 'PaymentSuccessActivity' with your actual activity class
+            val intent = Intent(this, paymentsuccess::class.java)
             startActivity(intent)
         }
 

@@ -22,7 +22,7 @@ class deadpoolmovie : AppCompatActivity() {
         val continueButton: Button = findViewById(R.id.continueButton)
 
         backButton.setOnClickListener {
-            finish() // Finish the current activity to go back
+            finish()
         }
 
         continueButton.setOnClickListener {

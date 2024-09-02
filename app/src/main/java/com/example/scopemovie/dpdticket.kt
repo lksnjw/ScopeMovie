@@ -22,7 +22,7 @@ class dpdticket : AppCompatActivity() {
         // Handle back button click
         val backButton: ImageButton = findViewById(R.id.backButton3)
         backButton.setOnClickListener {
-            finish() // Finish the current activity to go back
+            finish()
         }
 
         // Handle Book Ticket button click
@@ -32,7 +32,6 @@ class dpdticket : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // Handle window insets for edge-to-edge display
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)

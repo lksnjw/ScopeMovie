@@ -15,17 +15,14 @@ class home : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_home)
 
-        // Get references to the existing ImageButtons
         val profileButton: ImageButton = findViewById(R.id.imageButton5)
         val movieButton: ImageButton = findViewById(R.id.imageButton7)
         val googleMapButton: ImageButton = findViewById(R.id.imageButton2)
         val notificationButton: ImageButton = findViewById(R.id.imageButton3)
         val profileButton2: ImageButton = findViewById(R.id.imageButton4)
 
-        // Get reference to the new Deadpool button
-        val deadpoolButton: ImageButton = findViewById(R.id.deadpool) // Make sure you have this ID in your layout
+        val deadpoolButton: ImageButton = findViewById(R.id.deadpool)
 
-        // Set click listeners for the existing buttons (unchanged)
         profileButton.setOnClickListener {
             val intent = Intent(this, profile::class.java)
             startActivity(intent)
@@ -51,14 +48,11 @@ class home : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // Set click listener for the Deadpool button
         deadpoolButton.setOnClickListener {
-            // Navigate to the Deadpool movie details activity
             val intent = Intent(this, deadpoolmovie::class.java) // Replace 'DeadpoolMovieDetailsActivity' with your actual activity class
             startActivity(intent)
         }
 
-        // Handle window insets for edge-to-edge display
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)

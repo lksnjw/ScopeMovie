@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout // Assuming you're using ConstraintLayout
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import java.util.logging.Handler
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,16 +16,11 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge() // Make sure you've defined this function
         setContentView(R.layout.activity_main)
 
-        val mainLayout = findViewById<ConstraintLayout>(R.id.main)
-        mainLayout.setOnClickListener {
-            val intent = Intent(this, MainActivity2::class.java)
+        android.os.Handler().postDelayed({
+            val intent = Intent(this@MainActivity,MainActivity2::class.java)
             startActivity(intent)
-        }
+            finish() // Finish the current activity if you don't want to return to it
+        }, 2500)
 
-        ViewCompat.setOnApplyWindowInsetsListener(mainLayout) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
     }
 }
